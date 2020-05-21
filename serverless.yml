@@ -1,18 +1,18 @@
 # serverless.yml
 
-service: ampl-sls-example-backend
+service: vasitum-assignment
 
 plugins:
   - serverless-python-requirements
   - serverless-wsgi
   - aws-amplify-serverless-plugin
-  - serverless-s3-sync
+  # - serverless-s3-sync
 custom:
   stage: ${opt:stage, "v1"}
   siteName: vasitum
-  s3Sync:
-    - bucketName: ${self:custom.siteName}
-      localDir: build
+  # s3Sync:
+  #   - bucketName: ${self:custom.siteName}
+  #     localDir: build
   wsgi:
     app: app.app
     packRequirements: false

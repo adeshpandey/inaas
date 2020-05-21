@@ -27,23 +27,23 @@ export class About extends Component {
     const dataResources = [
         {
             title:'Github Repo',
-            url:''
+            url:'https://github.com/adeshpandey/inaas'
         },
         {
             title:'Current API Link',
-            url:'https://f13gb4844j.execute-api.us-west-2.amazonaws.com/v1/current'
+            url:'https://46p3m1rohj.execute-api.us-west-2.amazonaws.com/v1/current'
         },
         {
             title:'Next API Link',
-            url:'https://f13gb4844j.execute-api.us-west-2.amazonaws.com/v1/next'
+            url:'https://46p3m1rohj.execute-api.us-west-2.amazonaws.com/v1/next'
         },
         {
             title:'Reset API Link',
-            url:'https://f13gb4844j.execute-api.us-west-2.amazonaws.com/v1/reset'
+            url:'https://46p3m1rohj.execute-api.us-west-2.amazonaws.com/v1/reset'
         },
         {
             title:'FrontEnd URL',
-            url:''
+            url:'https://vasitum.s3-us-west-2.amazonaws.com'
         },
     ]
 
@@ -98,6 +98,12 @@ export class About extends Component {
               </List.Item>
             )}
           ></List>
+        </Card>
+        <Card style={{ marginBottom: 15 }}>
+          <Title level={3}>Why this architecture?</Title>
+          <p>
+              I could easily do this assignment using Flask or Django in Python or Laravel in PHP which might take hardly 2-3 hours but I wanted to strech my abilities with this assignment too so I chose above architecture.I hope you find my implementation interesting.
+          </p>
         </Card>
       </div>
     );
